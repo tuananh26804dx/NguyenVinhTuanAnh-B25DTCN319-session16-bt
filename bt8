@@ -1,0 +1,15 @@
+#include <stdlib.h>
+#include <string.h>
+#include <ctype.h> 
+
+int main() {
+	char str[] = "rat vui duoc gap cac ban";
+	int i = 0;
+	while(str[i] != '\0') {
+		if(i==0 || (str[i-1]==' ' && isalpha(str[i]) )){
+			str[i] = toupper(str[i]); 
+		}
+		i++; 
+	}
+	printf("Chuoi sau khi format: %s", str); 
+}
