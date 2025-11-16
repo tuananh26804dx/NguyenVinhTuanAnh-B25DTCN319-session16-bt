@@ -1,0 +1,19 @@
+#include <stdio.h>
+#include <string.h>
+
+int main (){
+	char chuoiGoc[] = "Hello World";
+	char chuoiDaoNguoc[20];
+	
+	int doDai = strlen(chuoiGoc);
+	int i, j;
+	for(i=doDai -1, j=0; i>=0; i--, j++){
+		chuoiDaoNguoc[j] = chuoiGoc[i]; 
+	} 
+	chuoiDaoNguoc[j] = '\0';
+	
+	printf("Chuoi goc:%s\n", chuoiGoc);
+	printf("Chuoi dao nguoc:%s\n", chuoiDaoNguoc);
+	
+	return 0; 
+}
