@@ -1,0 +1,16 @@
+#include <stdlib.h>
+#include <string.h> 
+#include <ctype.h>
+
+int main() {
+	char str[100] = "tao van cu the thoi neu nhu may co van de thi day la cai van de cua may";
+	char letter = 'a';
+	int i = 0, j = 0;
+	while (str[100] != '\0') {
+		if(str[i]!= letter) {
+			str[j++] = str[i];
+		}
+		i++; 
+	}
+	printf("Chuoi sau khi xoa: %s", str); 
+}
