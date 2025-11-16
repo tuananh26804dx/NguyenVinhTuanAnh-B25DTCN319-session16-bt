@@ -1,0 +1,18 @@
+#include <stdio.h>
+#include <string.h>
+
+int main() {
+	char str[50];
+	int i, count = 0;
+	printf("Nhap chuoi:");
+	fgets(str, sizeof(str), stdin);
+	str[strcspn(str, "\n")] = '\0';
+	
+	for(i=0; str[i] != '\0'; i++) {
+		if(str[0] != ' '&& str[0] != '\0') 
+	       count ++;
+	}
+	printf("So tu trong chuoi la: %d",  count);
+	
+	return 0; 
+}
