@@ -1,0 +1,12 @@
+#include <stdio.h>
+#include <string.h>
+
+int main(){
+	char myString = "Xin chao";
+	int length = strlen(myString);
+	printf("Cac ki tu cua chuoi la: ");
+	for(int i = 0; i<length; i++){
+		printf("%c",myString[i]); 
+	} 
+	return 0; 
+} 
