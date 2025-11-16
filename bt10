@@ -1,0 +1,23 @@
+#include <stdio.h>
+#include <string.h>
+
+int main() {
+    char str[] = "Va tao cung mat kha lau de ma nhan ra tao khong co trach nhiem phai lam may vua y";
+    int freq[256] = {0};
+    int i;
+
+    for (i = 0; str[i] != '\0'; i++) {
+        unsigned char ch = str[i];
+        freq[ch]++;
+    }
+
+    printf("Chuoi: %s\n", str);
+    printf("Cac ky tu va so lan xuat hien:\n");
+    
+    for (i = 0; i < 256; i++) {
+        if (freq[i] > 0)
+            printf("'%c' : %d lan\n", i, freq[i]);
+    }
+
+    return 0;
+}
