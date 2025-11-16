@@ -1,0 +1,21 @@
+#include <stdio.h>
+#include <string.h>
+
+int main() {
+	char chuoi[100] = "Chao mung den voi PTIT";
+	char kyTuNhap;
+	int dem = 0;
+	
+	printf("Chuoi da khai bao: %s\n", chuoi);
+	printf("Nhap mot ky tu bat ky: ");
+	scanf("%c", &kyTuNhap);
+	
+	for (int i=0; chuoi[i]!= \0; i++){
+		if (chuoi[i] ==kyTuNhap){
+			dem++; 
+		} 
+	} 
+	printf("Ky tu %c xuat hien %d lan trong chuoi\n", kyTuNhap, dem);
+	
+	return 0; 
+}
